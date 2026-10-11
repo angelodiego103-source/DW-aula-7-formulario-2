@@ -1,0 +1,60 @@
+/*
+Descricao: PW-prova-28-09
+nome_arquivo: main.css
+nome_exercicio: Formulário 2 - tudo o que foi passado em aula
+nome_aluno: Diego Augusto Ângelo
+email_aluno: diego.angelo@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+*/
+
+/* tela cadastro */
+.body_cadastro {
+    background-color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+
+.h1_cadastro {
+    color: purple;
+    font-size: 30px;
+}
+
+.campo {
+    margin: 10px;
+}
+
+.campo > label {
+    margin-right: 5px;
+}
+
+.campo input[type="email"],
+.campo input[type="password"],
+.campo select,
+.campo textarea {
+    font-size: 16px;
+}
+
+.campo textarea {
+    vertical-align: middle;
+}
+
+.campo input[type="submit"] {
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+/* tela perfil */
+
+.body_perfil{
+    background-color: beige;
+    text-align: center;
+}
+
+.h1_perfil{
+    color: brown;
+    font-size: 20px;
+}
+
+.p_perfil{
+    font-size: 20px;
+}

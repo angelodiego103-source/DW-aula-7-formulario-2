@@ -1,0 +1,116 @@
+<!--
+Descricao: DW-aula-7-formulario
+nome_arquivo: cadastro.html
+nome_exercicio: Formulário 2 - tudo o que foi passado em aula
+nome_aluno: Diego Augusto Ângelo
+email_aluno: diego.angelo@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/main.css">
+
+    <title>Cadastro de Login</title>
+</head>
+<body class="body_cadastro">
+
+    <div class="h1_cadastro">
+        <h1>Cadastro</h1>
+    </div>
+
+    <form id="formLogin" action="#" method="post">
+
+        <!-- campo email (email) -->
+        <div class="campo">
+            <label for="c_email">Email:</label>
+            <input type="email" id="c_email" name="cemail" placeholder="Cadastre seu email" required> 
+        </div>
+
+        <!-- campo senha (password) -->
+        <div class="campo">
+            <label for="c_senha">Senha:</label>
+            <input type="password" id="c_senha" name="csenha" placeholder="Cadastre sua senha" required>
+        </div>
+
+        <!-- campo gênero (radio) -->
+        <div class="campo">
+            <label>Gênero:</label>
+
+            <div>
+                <label>
+                    <input type="radio" name="genero" value="masculino">
+                    Masculino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero" value="feminino">
+                    Feminino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero" value="outro">
+                    Outro
+                </label>
+            </div>
+        </div>
+
+        <!-- campo interesses (checkbox) -->
+        <div class="campo">
+            <label>Interesses:</label>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="interesses" value="programacao">
+                    Programação
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesses" value="jogos">
+                    Jogos
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interesses" value="tecnologia">
+                    Tecnologia
+                </label>
+            </div>
+        </div>
+
+        <!-- campo estado (select) -->
+        <div class="campo">
+            <label for="c_estado">Estado:</label>
+
+            <select id="c_estado" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pr">Paraná</option>
+            </select>
+        </div>
+
+        <!-- campo sobre (textarea) -->
+        <div class="campo">
+            <label for="c_sobre">Sobre você:</label>
+
+            <textarea id="c_sobre" name="c_sobre"
+            rows="5" cols="30"
+            placeholder="Fale um pouco sobre você"></textarea>
+        </div>
+
+        <!-- campo enviar (botão) -->
+        <div class="campo">
+            <input type="submit" value="Cadastrar">
+        </div>
+
+    </form>
+
+    <script src="static/main.js"></script>
+
+</body>
+</html>
